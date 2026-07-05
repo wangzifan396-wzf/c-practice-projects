@@ -1,0 +1,48 @@
+# Visual Studio user state
+.vs/
+**/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+**/[Dd]ebug/
+**/[Rr]elease/
+**/x64/
+**/x86/
+**/bin/
+**/obj/
+
+# Compiled binaries and linker/debug files
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.ipch
+*.iobj
+*.ipdb
+
+# Visual Studio databases and caches
+*.VC.db
+*.VC.opendb
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
