@@ -6,6 +6,10 @@
 *.userosscache
 *.sln.docstates
 
+# Local AI assistant settings
+.claude/
+**/.claude/
+
 # Build output
 [Dd]ebug/
 [Rr]elease/
