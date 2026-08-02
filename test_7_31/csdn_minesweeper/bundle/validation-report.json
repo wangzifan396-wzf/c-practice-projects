@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "validatedAt": "2026-07-31T13:37:48+00:00",
+  "bundle": "D:\\VS2026_Files\\test_7_31\\csdn_minesweeper\\bundle",
+  "valid": true,
+  "summary": {
+    "blockers": 0,
+    "warnings": 0,
+    "articleCharacters": 4282,
+    "h2Sections": 11,
+    "codeFences": 34,
+    "bodyImages": 5
+  },
+  "issues": []
+}

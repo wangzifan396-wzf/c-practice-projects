@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-31T13:37:48+00:00",
+  "title": "从零写一个能玩的 C 语言扫雷",
+  "articleType": "原创",
+  "category": "C/C++",
+  "backupCategories": [
+    "编程语言",
+    "游戏开发"
+  ],
+  "summary": "一份能编译、能玩、零告警的 C 语言扫雷是怎么写出来的？本文从一张白纸讲起，用双棋盘模型、哨兵边框、3×3 邻域扫描、递归连锁展开四个核心设计，带初学者一步步拼出完整程序。配 5 张自绘示意图（双棋盘、哨兵边框、数雷、递归水波、主循环流程图），代码已开源到 GitHub，本地一行 make 即可运行。适合正在写扫雷课设、或刚学完 C 语言想做个小游戏练手的同学。",
+  "tags": [
+    "C语言",
+    "扫雷游戏",
+    "递归算法",
+    "C语言入门",
+    "小游戏开发"
+  ],
+  "alternativeTitles": [
+    "手把手写出一个能玩的 C 语言扫雷：双棋盘、哨兵边框与递归展开",
+    "从零做扫雷：一份可运行 C 语言小游戏的设计与实现"
+  ],
+  "coverPackaged": "images/cover.png",
+  "repositoryUrl": "https://github.com/wangzifan396-wzf/mini-browser-games/tree/main/minesweeper-c",
+  "sourceCommit": "",
+  "notes": [
+    "封面 1280x720，正文配图 5 张均为 1280x720，自绘 SVG 经 sharp 栅格化。",
+    "图1 双棋盘 / 图2 哨兵边框 / 图3 3x3 数雷 / 图4 递归展开 / 图5 主循环流程图，放置位置见文末「配图索引」。",
+    "文中终端输出全部为真实运行记录，非手写示意。"
+  ],
+  "bodyImageCount": 5,
+  "remoteImageCount": 0
+}

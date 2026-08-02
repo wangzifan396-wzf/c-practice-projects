@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-31T13:37:48+00:00",
+  "cover": {
+    "sourceReference": "images/cover.png",
+    "packaged": "images/cover.png",
+    "bytes": 62341,
+    "sha256": "fa877b1c4209da55b6fd633205ed38c4588b90efb5d8a05c83c442a87aba8147",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "bodyImages": [
+    {
+      "number": 1,
+      "marker": "【配图 01：请上传 images/01-fig1.png 后删除本行】",
+      "sourceReference": "./images/fig1.png",
+      "packaged": "images/01-fig1.png",
+      "alt": "图1 双棋盘模型：mine 盘存客观真相，show 盘存玩家看到的界面，两者共用同一套坐标 (行,列)",
+      "caption": "双棋盘模型——`mine` 是标准答案，`show` 是玩家界面，二者用同一套坐标 `(行, 列)`，靠坐标一一对应。",
+      "bytes": 48451,
+      "sha256": "982f31865be23a5bfa66789e16dc90d93935f8c11be4eb9c279e8109af6f7a2d",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "number": 2,
+      "marker": "【配图 02：请上传 images/02-fig2.png 后删除本行】",
+      "sourceReference": "./images/fig2.png",
+      "packaged": "images/02-fig2.png",
+      "alt": "图2 哨兵边框：11×11 数组外圈填 SAFE 做护城河，中间 9×9 才是可玩区",
+      "caption": "哨兵边框——11×11 数组里，外圈（高亮框外）全是占位的「没雷」，只有框内 9×9 是玩家真正能点的棋盘。",
+      "bytes": 44230,
+      "sha256": "8468da59ec4cff4d8af843549109e2f6ac12b4561d3f68e357be1584f9d56495",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "number": 3,
+      "marker": "【配图 03：请上传 images/03-fig3.png 后删除本行】",
+      "sourceReference": "./images/fig3.png",
+      "packaged": "images/03-fig3.png",
+      "alt": "图3 3×3 邻域扫描：遍历 9 格跳过中心，统计 8 个邻居里雷的数量",
+      "caption": "3×3 邻域扫描——两层循环遍历中心周围的 9 格，跳过中心 `(x,y)` 自己，剩下的 8 个就是邻居。",
+      "bytes": 49812,
+      "sha256": "0525325d7df11624550c550c514631622d446cbee2cb86b88fefec126a6d4a1b",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "number": 4,
+      "marker": "【配图 04：请上传 images/04-fig4.png 后删除本行】",
+      "sourceReference": "./images/fig4.png",
+      "packaged": "images/04-fig4.png",
+      "alt": "图4 递归展开的水波扩散：三条出口决定继续、停止还是刹车",
+      "caption": "连锁展开——从一颗空格（中心）出发，蓝色越深离中心越近；遇到数字就停（出口 B），遇到空格继续向 8 邻居扩散（出口 C），已翻开则刹车（出口 A）。",
+      "bytes": 55986,
+      "sha256": "72a7bc977172f6b85f2dcde95914ce45b5b75368f399306e9b229970ea596d6b",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "number": 5,
+      "marker": "【配图 05：请上传 images/05-fig5.png 后删除本行】",
+      "sourceReference": "./images/fig5.png",
+      "packaged": "images/05-fig5.png",
+      "alt": "图5 游戏主循环流程图：从读坐标到判胜负的完整流程",
+      "caption": "游戏主循环——拿到坐标后先判合法，再判是否已揭开，再判是否踩雷，最后数雷并决定展开或显示数字，直到胜利或踩雷。",
+      "bytes": 75689,
+      "sha256": "c381626e1044ed024ff315ec69b8e38ae92908390defced9f35052abfaf5fdad",
+      "dimensions": {
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ],
+  "remoteImages": []
+}

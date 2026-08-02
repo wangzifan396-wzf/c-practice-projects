@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"><rect width="1280" height="720" fill="#0A0A0B"/>
+<text x="640" y="58" fill="#FFFFFF" font-size="26" text-anchor="middle" font-weight="700">游戏主循环：每一步怎么走</text>
+<rect x="430" y="100" width="420" height="420" rx="8" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="128.0" fill="#FFFFFF" font-size="17" text-anchor="middle">开始：显示菜单与棋盘</text>
+<rect x="430" y="162" width="420" height="420" rx="8" fill="#5E6AD2" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="190.0" fill="#FFFFFF" font-size="17" text-anchor="middle">读取玩家坐标  ReadCoord()</text>
+<rect x="430" y="224" width="420" height="420" rx="8" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="252.0" fill="#FFFFFF" font-size="17" text-anchor="middle">坐标合法？否则提示并重新输入</text>
+<rect x="430" y="286" width="420" height="420" rx="8" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="314.0" fill="#FFFFFF" font-size="17" text-anchor="middle">该格已揭开？是则跳过本次</text>
+<rect x="430" y="348" width="420" height="420" rx="8" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="376.0" fill="#FFFFFF" font-size="17" text-anchor="middle">是雷？是则结算失败并结束</text>
+<rect x="430" y="410" width="420" height="420" rx="8" fill="#5E6AD2" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="438.0" fill="#FFFFFF" font-size="17" text-anchor="middle">数周围 8 格的雷数  GetMineCount()</text>
+<rect x="430" y="472" width="420" height="420" rx="8" fill="#5E6AD2" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="500.0" fill="#FFFFFF" font-size="17" text-anchor="middle">雷数为 0  →  递归展开  Expand()</text>
+<rect x="430" y="534" width="420" height="420" rx="8" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="562.0" fill="#FFFFFF" font-size="17" text-anchor="middle">否则只显示数字</text>
+<rect x="430" y="596" width="420" height="420" rx="8" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="624.0" fill="#FFFFFF" font-size="17" text-anchor="middle">全部安全格揭开？是则胜利</text>
+<line x1="640" y1="144" x2="640" y2="158" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<path d="M634,150 L640,158 L646,150 Z" fill="#A1A1AA"/>
+<line x1="640" y1="206" x2="640" y2="220" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<path d="M634,212 L640,220 L646,212 Z" fill="#A1A1AA"/>
+<line x1="640" y1="268" x2="640" y2="282" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<path d="M634,274 L640,282 L646,274 Z" fill="#A1A1AA"/>
+<line x1="640" y1="330" x2="640" y2="344" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<path d="M634,336 L640,344 L646,336 Z" fill="#A1A1AA"/>
+<line x1="640" y1="392" x2="640" y2="406" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<path d="M634,398 L640,406 L646,398 Z" fill="#A1A1AA"/>
+<line x1="640" y1="454" x2="640" y2="468" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<path d="M634,460 L640,468 L646,460 Z" fill="#A1A1AA"/>
+<line x1="640" y1="516" x2="640" y2="530" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<path d="M634,522 L640,530 L646,522 Z" fill="#A1A1AA"/>
+<line x1="640" y1="578" x2="640" y2="592" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<path d="M634,584 L640,592 L646,584 Z" fill="#A1A1AA"/>
+<text x="640" y="674" fill="#A1A1AA" font-size="15" text-anchor="middle">从 ReadCoord 拿到坐标后：先判合法 → 再判是否已揭开 → 再判是否踩雷 → 最后数雷并决定展开或显示数字。</text>
+</svg>

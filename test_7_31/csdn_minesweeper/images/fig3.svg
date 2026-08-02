@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"><rect width="1280" height="720" fill="#0A0A0B"/>
+<text x="640" y="80" fill="#FFFFFF" font-size="26" text-anchor="middle" font-weight="700">数一数周围 8 颗雷：3×3 邻域扫描</text>
+<rect x="525" y="170" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="560.0" y="213.0" fill="#A1A1AA" font-size="22" text-anchor="middle">&#183;</text>
+<rect x="605" y="170" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="213.0" fill="#A1A1AA" font-size="22" text-anchor="middle">&#183;</text>
+<rect x="685" y="170" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="720.0" y="213.0" fill="#A1A1AA" font-size="22" text-anchor="middle">&#183;</text>
+<rect x="525" y="250" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="560.0" y="293.0" fill="#A1A1AA" font-size="22" text-anchor="middle">&#183;</text>
+<rect x="605" y="250" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<rect x="605" y="250" width="70" height="70" rx="10" fill="#5E6AD2" opacity="0.3"/>
+<text x="640.0" y="293.0" fill="#FFFFFF" font-size="26" text-anchor="middle" font-weight="700">(x,y)</text>
+<rect x="685" y="250" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="720.0" y="293.0" fill="#A1A1AA" font-size="22" text-anchor="middle">&#183;</text>
+<rect x="525" y="330" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="560.0" y="373.0" fill="#A1A1AA" font-size="22" text-anchor="middle">&#183;</text>
+<rect x="605" y="330" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640.0" y="373.0" fill="#A1A1AA" font-size="22" text-anchor="middle">&#183;</text>
+<rect x="685" y="330" width="70" height="70" rx="10" fill="#1A1B1E" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="720.0" y="373.0" fill="#A1A1AA" font-size="22" text-anchor="middle">&#183;</text>
+<text x="560.0" y="235.0" fill="#22D3EE" font-size="13" text-anchor="middle">(x0,y0)</text>
+<text x="720.0" y="235.0" fill="#22D3EE" font-size="13" text-anchor="middle">(x0,y2)</text>
+<text x="560.0" y="395.0" fill="#22D3EE" font-size="13" text-anchor="middle">(x2,y0)</text>
+<text x="720.0" y="395.0" fill="#22D3EE" font-size="13" text-anchor="middle">(x2,y2)</text>
+<line x1="640" y1="240" x2="640" y2="300" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="640" y="330" fill="#A1A1AA" font-size="18" text-anchor="middle" font-family="monospace">for dx in -1..1:</text>
+<text x="640" y="360" fill="#A1A1AA" font-size="18" text-anchor="middle" font-family="monospace">  for dy in -1..1:</text>
+<text x="640" y="390" fill="#A1A1AA" font-size="18" text-anchor="middle" font-family="monospace">    if !(dx==0 &amp;&amp; dy==0): count += mine[x+dx][y+dy]</text>
+<text x="640" y="430" fill="#71717A" font-size="15" text-anchor="middle" font-style="italic">三层循环遍历 9 格，跳过中心 (dx==0 &amp;&amp; dy==0) 即得到 8 个邻居</text>
+</svg>
